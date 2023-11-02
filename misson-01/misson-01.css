@@ -4,6 +4,7 @@
   --Grey-800: #4e4e4e;
   --Grey-500: #c4c4c4;
   --Grey-100: #f3f3f3;
+  --Greyscale: #555555;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
   float: left;
 }
 
-.cardlink-info {
+.cardlink-wide-info {
   text-align: center;
   margin-top: -30px;
 }
@@ -38,7 +39,7 @@ img.wide-logo {
   height: 67px;
 }
 
-p {
+.cardlink-wide p {
   font-size: 24px;
   font-weight: 700;
   color: var(--Grey-800);
@@ -60,14 +61,34 @@ p {
   border: 1px solid var(--grey-500);
   margin: 8px 8px;
   background: var(--white);
-  flex-flow: column wrap;
-  align-content: stretch;
-  justify-content: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
   align-items: center;
+  align-content: center;
   float: left;
 }
 
-img.normal-product {
+.cardlink-normal-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.normal-logo {
   width: auto;
-  height: 196px;
+  height: 42px;
+}
+
+.normal-product {
+  width: auto;
+  height: 195px;
+}
+
+.cardlink-normal p {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--Greyscale);
+  text-align: center;
+  line-height: 27px;
+  margin: 0 auto;
 }
