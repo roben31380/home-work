@@ -1,0 +1,73 @@
+:root {
+  --white: #ffffff;
+  --Opacity-20: #00000033;
+  --Grey-800: #4e4e4e;
+  --Grey-500: #c4c4c4;
+  --Grey-100: #f3f3f3;
+}
+
+body {
+  background-color: lightgrey;
+  display: flow-root;
+  width: 600px;
+}
+
+/* 넓은거 */
+
+.cardlink-wide {
+  width: 502px;
+  height: 310px;
+  border: 1px solid var(--grey-500);
+  margin: 8px 8px;
+  background: var(--white);
+  display: flex;
+  flex-flow: column wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.cardlink-info {
+  text-align: center;
+  margin-top: -30px;
+}
+
+img.wide-logo {
+  width: auto;
+  height: 67px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--Grey-800);
+  text-align: center;
+  line-height: 36px;
+  margin: 0 auto;
+}
+
+.wide-product {
+  width: 222px;
+  height: 270px;
+}
+
+/* 보통인거 */
+
+.cardlink-normal {
+  width: 243px;
+  height: 310px;
+  border: 1px solid var(--grey-500);
+  margin: 8px 8px;
+  background: var(--white);
+  flex-flow: column wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+img.normal-product {
+  width: auto;
+  height: 196px;
+}
