@@ -118,7 +118,8 @@ img.wide-logo {
   background: var(--blue-600);
 }
 
-.buy-button:hover:before {
+.buy-button:hover:before,
+.buy-button:focus::before {
   content: "구매하기";
   font-weight: 500;
   margin-right: 15px;
