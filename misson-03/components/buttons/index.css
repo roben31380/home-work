@@ -1,0 +1,34 @@
+button {
+  background-color: var(--red-500, #e50914);
+  color: var(--White, #fff);
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0;
+}
+
+.normal-button {
+  border-radius: 4px;
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+}
+
+.arrow-button {
+  width: 113px;
+  height: 56px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 120%; /* 26.4px */
+  gap: 10px;
+}
+
+.arrow-button-left svg {
+  margin-right: 10px;
+}
+
+.arrow-button-right svg {
+  margin-left: 10px;
+}
