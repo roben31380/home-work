@@ -47,3 +47,25 @@
 .arrow-button-right svg {
   margin-left: 10px;
 }
+
+/* 언어 선택 셀렉트 */
+.lang-select-form {
+  display: inline-block;
+  /* 잘 안보여서 배경 넣어놓음, 쓸때 꼭 빼기 */
+  background-color: palevioletred;
+}
+
+.lang-select {
+  width: 113px;
+  height: auto;
+  border-radius: 2px;
+  border: 1px solid var(--gray-500, #757575);
+  color: var(--gray-500, #757575);
+  line-height: 1.2; /* 19.2px */
+  padding: 12px 10px;
+  text-align: center;
+  appearance: none;
+  background: url(../../images/Icon/global.svg) no-repeat
+      calc(100% - (100% - 10px)) 50%,
+    url(../../images/bi_caret-down-fill.svg) no-repeat calc(100% - 10px) 50%;
+}
