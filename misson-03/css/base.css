@@ -13,3 +13,11 @@ body {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
