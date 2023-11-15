@@ -1,6 +1,4 @@
-.email-form,
-.password-form {
-  display: inline-block;
+.form-wrapper {
   position: relative;
   font-size: 1rem;
   color: var(--gray--500, #757575);
@@ -10,49 +8,28 @@
   font-style: normal;
 }
 
-.email-input,
-.password-input {
-  display: block;
-  width: 540px;
+.form-input {
+  width: 100%;
   padding: 18px 20px;
   border: 1px solid var(--gray-200, #c8c8c8);
   background: var(--White, #fff);
 
   &::placeholder {
-    color: transparent;
+    visibility: hidden;
+    color: var(--gray--500, #757575);
   }
 }
-.email-label,
-.password-label {
+
+.form-label {
   position: absolute;
-  top: 35%;
-  left: 3.7%;
+  top: 40%;
+  left: 1%;
   font-style: normal;
 }
 
-.email-input:focus::placeholder {
-  color: var(--gray--500, #757575);
-}
-
-.email-form:focus-within > .email-label,
-.password-form:focus-within > .password-label {
-  color: var(--red--500, #e50914);
-  top: 10%;
-  font-size: 0.75rem;
-}
-
-.invalid.form-message::after {
-  content: "오류 메세지를 출력합니다.";
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.5; /* 21px */
-  letter-spacing: -0.128rem;
-  color: var(--red--500, #e50914);
-  margin-left: 2em;
-}
-.invalid.password-message::after {
-  content: "비밀번호는 영문, 숫자 조합 4 - 60자 사이 값을 입력합니다.";
+.form-message,
+.password-message {
+  display: none;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 700;
@@ -62,7 +39,30 @@
   margin-left: 2em;
 }
 
-.invalid.email-input,
-.invalid.password-input {
-  border-bottom: 3px solid var(--red--500, #e50914);
+.is--focus {
+  & .form-label {
+    color: var(--red--500, #e50914);
+    top: 10%;
+    font-size: 0.75rem;
+  }
+
+  & .form-input::placeholder {
+    visibility: visible;
+  }
+}
+
+.is--invalid {
+  & .form-label {
+    color: var(--red--500, #e50914);
+    top: 10%;
+    font-size: 0.75rem;
+  }
+  & .form-input {
+    border-bottom: 3px solid var(--red--500, #e50914);
+  }
+
+  & .form-message,
+  .password-message {
+    display: block;
+  }
 }
