@@ -1,6 +1,4 @@
 body {
-  /* background: url(/images/background.png) lightgray 50% / cover no-repeat; */
-  /* background-color: lightgray; */
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.5) 0%,
@@ -8,14 +6,6 @@ body {
       rgba(0, 0, 0, 1) 100%
     ),
     url(/images/background.png);
-}
-
-header {
-  height: 16.7vh;
-
-  & .header-wrapper {
-    width: 76.19%;
-  }
 }
 
 main {
@@ -36,7 +26,7 @@ main {
   row-gap: 28px;
 
   & h2 {
-    width: 30vw;
+    width: 65%;
     color: var(--White, #fff);
     text-align: center;
     font-size: 3.75rem;
@@ -69,10 +59,50 @@ main .form-wrapper {
   & form {
     display: flex;
     flex-flow: row nowrap;
+  }
+}
 
-    & button {
-      padding: 0.9rem 1.25rem;
-      width: 210px;
+@media screen and (max-width: 768px) {
+  body {
+    background: black;
+  }
+
+  .main-wrapper {
+    row-gap: 24px;
+    padding-inline: 1.125em;
+    text-align: center;
+
+    & h2 {
+      width: 90%;
+      font-size: 2.125rem;
+      white-space: normal;
+    }
+    & span {
+      width: 76%;
+      font-size: 1.125rem;
+      /* text-align: center; */
+    }
+
+    & p {
+      width: 80%;
+      font-size: 0.875rem;
+      font-weight: 400;
+      letter-spacing: -0.007px;
+    }
+
+    & .last-p {
+      font-size: 0.75rem;
+    }
+  }
+
+  main .form-wrapper {
+    width: 73%;
+    /* justify-content: center; */
+    & form {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      row-gap: 0.75em;
     }
   }
 }

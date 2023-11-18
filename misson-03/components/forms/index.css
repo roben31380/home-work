@@ -10,7 +10,7 @@
 
 .form-input {
   width: 100%;
-  padding: 18px 20px;
+  padding: 1.125px 1.25px;
   border: 1px solid var(--gray-200, #c8c8c8);
   background: var(--White, #fff);
 
@@ -64,5 +64,23 @@
   & .form-message,
   .password-message {
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-wrapper {
+    font-size: 0.875rem;
+  }
+
+  .form-input {
+    border-radius: 30px;
+    padding: 1.25em 0.625em;
+    height: 40px;
+  }
+
+  .form-label {
+    position: absolute;
+    top: 15%;
+    left: 5%;
   }
 }
