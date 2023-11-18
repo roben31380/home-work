@@ -1,6 +1,6 @@
 # Netflix promotion page
 
-![view](/images/readme/view.png)
+![view](/https://github.com/roben31380/home-work/blob/main/misson-03/images/readme/view.png)
 
 ## 작업순서
 
@@ -29,8 +29,9 @@
 
 ### buttons
 
-![buttons](/images/readme/button.png)
-####states
+![buttons](//https://github.com/roben31380/home-work/blob/main/misson-03/images/readme/button.png)
+
+#### states
 
 ```css
 &:hover {
@@ -51,7 +52,7 @@
 
 ### forms
 
-####states
+#### states
 
 ```css
 .is--focus {
@@ -83,7 +84,7 @@
 }
 ```
 
-##회고
+## 회고
 
 1. button은 가상클래스로, form은 클래스로 상태를 구분했는데 한가지 방법으로 통일시켜 작업해야 이후 유지보수나 스크립트를 활용할때 용이하겠다.
 2. 반응형 unit을 사용했을때 예상한 레이아웃이 나오지 않아 수정에 많은 시간이 걸림. 많이 만들어보면서 감 익히기.
