@@ -30,7 +30,7 @@
 
 ### buttons
 
-![buttons](//https://github.com/roben31380/home-work/blob/main/misson-03/images/readme/button.png)
+<img width="362" alt="button" src="https://github.com/roben31380/home-work/assets/148828856/63ce8cb3-cf02-4fef-b29c-844f457cc510">
 
 #### states
 
