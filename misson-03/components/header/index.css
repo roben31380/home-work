@@ -5,9 +5,9 @@ header {
 
 .header-wrapper {
   /* background-color: yellowgreen; */
-  width: 90.7%;
+  /* width: 90.7%; */
   margin: 0 auto;
-  padding-top: 40px;
+  padding-block: 2.5em;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -21,4 +21,18 @@ header {
   display: flex;
   flex-flow: row nowrap;
   column-gap: 1.5em;
+}
+
+@media screen (max-width: 768px) {
+  .header-logo svg {
+    width: 80px;
+  }
+
+  .header-wrapper {
+    padding-block: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

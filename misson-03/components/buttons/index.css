@@ -5,6 +5,7 @@
   font-style: normal;
   font-weight: 700;
   padding: 0;
+  white-space: nowrap;
 
   &:hover {
     background-color: var(--red-600, #b70710);
@@ -28,15 +29,15 @@
   height: 40px;
   text-align: center;
   font-size: 16px;
-  line-height: 150%; /* 24px */
+  line-height: 1.5; /* 24px */
 }
 
 .arrow-button {
-  width: 113px;
-  height: 56px;
+  /* width: 113px; */
+  height: auto;
   text-align: center;
-  font-size: 22px;
-  line-height: 120%; /* 26.4px */
+  font-size: 1.375rem;
+  line-height: 1.2; /* 26.4px */
   gap: 10px;
 }
 
