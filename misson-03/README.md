@@ -1,6 +1,7 @@
 # Netflix promotion page
 
-![view](/https://github.com/roben31380/home-work/blob/main/misson-03/images/readme/view.png)
+<img width="597" alt="view" src="https://github.com/roben31380/home-work/assets/148828856/af034b9f-59a4-4021-aba1-6830ee1aee4e">
+
 
 ## 작업순서
 
